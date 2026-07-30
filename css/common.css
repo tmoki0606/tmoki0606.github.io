@@ -1,0 +1,58 @@
+.site-nav{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.site-nav.nav-hidden{
+    transform: translateY(-100%);
+}
+
+.site-nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0 24px;
+}
+
+.site-nav a{
+    position: relative;
+    display: inline-block;
+    padding: 18px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* 下線本体（普段は幅0（非表示）） */
+.site-nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    transition: width 0.25s ease;
+}
+
+/* ホバーで伸びる */
+.site-nav a::hover::after{
+    width: 100%;
+}
+
+/* 現在地は常に表示 */
+.site-nab a.active::after{
+    width: 100%;
+}
+
+/* 本文がナビに隠れないよう調整 */
+body{
+    padding-top: 60px; /* 実際の高さに合わせて調整 */
+}
