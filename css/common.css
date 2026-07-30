@@ -37,7 +37,6 @@
     left: 50%;
     right: 50%;
     bottom: 0;
-    width: 0;
     height: 3px;
     background-color: red;
     transition: left 0.25s ease, right 0.25s ease;
