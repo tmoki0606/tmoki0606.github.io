@@ -34,22 +34,25 @@
 .site-nav a::after{
     content: "";
     position: absolute;
-    left: 0;
+    left: 50px;
+    right: 50px;
     bottom: 0;
     width: 0;
     height: 3px;
     background-color: red;
-    transition: width 0.25s ease;
+    transition: left 0.25s ease, right 0.25s ease;
 }
 
 /* ホバーで伸びる */
 .site-nav a:hover::after{
-    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 /* 現在地は常に表示 */
 .site-nav a.active::after{
-    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 /* 本文がナビに隠れないよう調整 */
