@@ -43,12 +43,12 @@
 }
 
 /* ホバーで伸びる */
-.site-nav a::hover::after{
+.site-nav a:hover::after{
     width: 100%;
 }
 
 /* 現在地は常に表示 */
-.site-nab a.active::after{
+.site-nav a.active::after{
     width: 100%;
 }
 
