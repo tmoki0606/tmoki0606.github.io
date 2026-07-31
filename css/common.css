@@ -25,11 +25,16 @@
     position: relative;
     display: inline-block;
     padding: 20px 0;
-    color: grayxxcsxss;
+    color: gray;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.05em;
+}
+
+/* 訪問済みリンクが紫にならないよう */
+.site-nav a:visited{
+    color: gray;
 }
 
 /* 下線本体（普段は幅0（非表示）） */
@@ -39,7 +44,7 @@
     left: 50%;
     right: 50%;
     bottom: 0;
-    height: 2px;
+    height: 4px;
     background-color: #8a6240;
     transition: left 0.25s ease, right 0.25s ease;
 }
