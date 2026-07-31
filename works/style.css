@@ -1,14 +1,8 @@
 .workgrid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-}
+    grid-template-columns: repeat(3, 240px); /* 列の個数, 1列あたりのサイズ */
+    gap: 24px; /* 列の間隔 */
 
-@media (min-width: 768px){
-    .work-grid{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-    }
 }
 
 .work-image{
@@ -19,6 +13,6 @@
 
 .work-image img{
     width: 100%;
-    height: 200px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
