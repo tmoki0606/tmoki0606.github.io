@@ -1,0 +1,17 @@
+.workgrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+}
+
+.work-image{
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.work-image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
