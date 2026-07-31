@@ -25,7 +25,7 @@
     position: relative;
     display: inline-block;
     padding: 20px 0;
-    color: gray;
+    color: black;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -34,7 +34,7 @@
 
 /* 訪問済みリンクが紫にならないよう */
 .site-nav a:visited{
-    color: gray;
+    color: black;
 }
 
 /* 下線本体（普段は幅0（非表示）） */
