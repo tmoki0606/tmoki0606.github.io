@@ -1,26 +1,13 @@
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 32px;
-}
-
-th, td{
-    border: 1px solid #444444;
-    padding: 12px;
-    text-align: left;
-    color: white;
-}
-
-th{
-    background-color: #262626;
-    font-weight: 500;
+.page-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .profile{
-    max-width: 800px;
-    margin: 0 auto 40px auto;
     padding: 32px;
     border: 1px solid #333333;
+    margin-bottom: 40px;
 }
 
 .intro-text{
@@ -42,4 +29,22 @@ th{
 .profile-column li{
     padding: 8ox 0;
     border-bottom: 1px solid #333333;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+
+th, td{
+    border: 1px solid #444444;
+    padding: 12px;
+    text-align: left;
+    color: white;
+}
+
+th{
+    background-color: #262626;
+    font-weight: 500;
 }
