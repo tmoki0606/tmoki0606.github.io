@@ -1,6 +1,13 @@
+/* 本文がナビに隠れないよう調整 */
+body{
+    background-color: #181818;
+    color: white;
+
+    padding-top: 60px; /* 実際の高さに合わせて調整 */
+}
+
 .site-nav{
-    background-color: white;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+    background-color: #181818;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +33,7 @@
     position: relative;
     display: inline-block;
     padding: 20px 0;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -35,7 +42,7 @@
 
 /* 訪問済みリンクが紫にならないよう */
 .site-nav a:visited{
-    color: black;
+    color: white;
 }
 
 /* 下線本体（普段は幅0（非表示）） */
@@ -46,7 +53,7 @@
     right: 50%;
     bottom: 0;
     height: 4px;
-    background-color: #8a6240;
+    background-color: #d80001;
     transition: left 0.25s ease, right 0.25s ease;
 }
 
@@ -62,7 +69,8 @@
     right: 0;
 }
 
-/* 本文がナビに隠れないよう調整 */
-body{
-    padding-top: 60px; /* 実際の高さに合わせて調整 */
+.section-divider {
+  border: none;
+  border-top: 2px solid #1d2b96;
+  margin: 40px 0;
 }
