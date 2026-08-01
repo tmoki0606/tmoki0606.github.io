@@ -74,3 +74,10 @@ body{
   border-top: 2px solid #1d2b96;
   margin: 40px 0;
 }
+
+/* ページの幅により左右の余白調整 */
+.page-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
