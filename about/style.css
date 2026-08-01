@@ -5,12 +5,13 @@ table{
 }
 
 th, td{
-    border: 1px solid #cccccc;
+    border: 1px solid #444444;
     padding: 12px;
     text-align: left;
+    color: white;
 }
 
 th{
-    background-color: #f7f7f7;
+    background-color: #262626;
     font-weight: 500;
 }
