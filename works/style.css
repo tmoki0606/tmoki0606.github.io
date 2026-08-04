@@ -1,6 +1,6 @@
 .workgrid{
     display: grid;
-    grid-template-columns: repeat(3, 240px); /* 列の個数, 1列あたりのサイズ */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 列の個数, 1列あたりのサイズ */
     gap: 24px; /* 列の間隔 */
 
 }
