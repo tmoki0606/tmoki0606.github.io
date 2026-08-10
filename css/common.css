@@ -81,3 +81,22 @@ body{
     margin: 0 auto;
     padding: 0 24px;
 }
+
+/* 404ページ */
+.not-found{
+    text-align: center;
+    padding: 120px 0;
+}
+
+.not-found h2{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.back-home{
+    display: inline-block;
+    margin-top: 24px;
+    color: #d80001;
+    text-decoration: none;
+    border-bottom: 1px solid #d80001;
+}
