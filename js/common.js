@@ -18,7 +18,7 @@
     
     lastScrollY = currentScrollY;
     });
-});
+})();
 
 // webshot
 document.addEventListener('click', function (e) {
