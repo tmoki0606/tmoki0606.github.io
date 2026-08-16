@@ -100,3 +100,19 @@ body{
     text-decoration: none;
     border-bottom: 1px solid #d80001;
 }
+
+.web-shot{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vm;
+    height: 100vh;
+    pointer-events: none; /* クリックの邪魔をしないように */
+    z-index: 9999;
+}
+
+.web-shot line{
+    stroke: #ffffff;
+    stroke-width: 2;
+    opacity: 0.9;
+}
