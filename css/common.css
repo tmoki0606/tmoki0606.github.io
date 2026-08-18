@@ -48,10 +48,12 @@ body{
 /* 普通のaが訪問時に紫にならないように */
 a {
   text-decoration: underline;
+  text-decoration-color: #5b72d1;
 }
 
 a:visited {
   color: inherit;
+  text-decoration-color: #5b72d1;
 }
 
 /* 下線本体（普段は幅0（非表示）） */
