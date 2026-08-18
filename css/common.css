@@ -47,12 +47,11 @@ body{
 
 /* 普通のaが訪問時に紫にならないように */
 a {
-  color: #5b72d1; /* 区切り線の青より少し明るめ */
   text-decoration: underline;
 }
 
 a:visited {
-  color: #5b72d1;
+  color: inherit;
 }
 
 /* 下線本体（普段は幅0（非表示）） */
