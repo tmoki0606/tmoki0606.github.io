@@ -2,7 +2,6 @@
 body{
     background-color: #181818;
     color: white;
-
     padding-top: 60px; /* 実際の高さに合わせて調整 */
 }
 
@@ -47,13 +46,12 @@ body{
 
 /* 普通のaが訪問時に紫にならないように */
 a {
-  text-decoration: underline;
-  text-decoration-color: #5b72d1;
+    text-decoration: underline 3px #5b72d1;
 }
 
 a:visited {
-  color: inherit;
-  text-decoration-color: #5b72d1;
+    color: inherit;
+    text-decoration-color: #5b72d1;
 }
 
 /* 下線本体（普段は幅0（非表示）） */
