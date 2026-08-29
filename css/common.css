@@ -1,9 +1,32 @@
-/* 本文がナビに隠れないよう調整 */
-body{
-    background-color: #181818;
-    color: white;
+:root {
+    --color-bg: #F1EFE7;
+    --color-text: #252823;
+    --color-greeen: #667565;
+    --color-stone: #C8C7BD;
+    --color-accent: #A84A3A;
+}
 
-    padding-top: 60px; /* 実際の高さに合わせて調整 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .site-nav{
