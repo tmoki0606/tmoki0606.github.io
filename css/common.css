@@ -83,6 +83,20 @@ a {
     width: 100%;
 }
 
+.hero {
+    min-height: calc(100vh - 90px);
+    padding: 40px 48px 60px;
+}
+
+.hero-title {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(72px, 12vw, 180px);
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+}
+
 /* ページの幅により左右の余白調整 
 .page-container{
     max-width: 800px;
