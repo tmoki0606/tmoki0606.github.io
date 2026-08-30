@@ -83,14 +83,14 @@ a {
     width: 100%;
 }
 
-/* ページの幅により左右の余白調整 */
+/* ページの幅により左右の余白調整 
 .page-container{
     max-width: 800px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-/* 404ページ */
+ 404ページ 
 .not-found{
     text-align: center;
     padding: 120px 0;
@@ -108,3 +108,4 @@ a {
     text-decoration: none;
     border-bottom: 1px solid #d80001;
 }
+*/
