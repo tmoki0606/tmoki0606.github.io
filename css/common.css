@@ -87,6 +87,35 @@ a {
     min-height: calc(100vh - 90px);
     padding: 40px 48px 60px;
     position: relative;
+    overflow: hidden;
+}
+
+.hero-::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: var(--color-green);
+    filter: blur(120px);
+    opacity: 0.18;
+
+    top: 80px;
+    right: 180px;
+}
+
+.hero-::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: var(--color-brown);
+    filter: blur(130px);
+    opacity: 0.12;
+
+    top: 60px;
+    left: 40%;
 }
 
 .hero-title {
