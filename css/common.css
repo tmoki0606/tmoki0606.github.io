@@ -86,6 +86,7 @@ a {
 .hero {
     min-height: calc(100vh - 90px);
     padding: 40px 48px 60px;
+    position: relative;
 }
 
 .hero-title {
@@ -95,6 +96,22 @@ a {
     font-size: clamp(72px, 12vw, 180px);
     line-height: 0.85;
     letter-spacing: -0.04em;
+}
+
+.hero-category {
+    margin-top: 32px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+}
+
+.hero-description {
+    margin-top: 12px;
+    font-size: 16px;
+    color: var(--color-green);
+}
+
+.scroll-guide {
+    position: absolute right bottom;
 }
 
 /* ページの幅により左右の余白調整 
