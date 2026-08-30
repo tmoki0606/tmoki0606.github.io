@@ -111,7 +111,9 @@ a {
 }
 
 .scroll-guide {
-    position: absolute right bottom;
+    position: absolute;
+    right: 48px;
+    bottom: 40px;
 }
 
 /* ページの幅により左右の余白調整 
