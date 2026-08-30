@@ -157,6 +157,23 @@ a {
     bottom: 40px;
 }
 
+.scroll-guide span {
+    display: inline-block;
+    animation: scroll-arrow 1.8s ease-in-out infinite;
+}
+
+@keyframes scroll-arrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY();
+    }
+}
+
 /* ページの幅により左右の余白調整 
 .page-container{
     max-width: 800px;
