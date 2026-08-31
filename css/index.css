@@ -126,4 +126,22 @@
     align-self: flex-end;
     margin-top: 32px;
     font-size: 18px;
+    display: inline-block;
+    position: relative;
+}
+
+.about-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+/* When hovering */
+.about-link:hover::after {
+    width: 100%;
 }
