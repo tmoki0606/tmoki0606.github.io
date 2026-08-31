@@ -167,7 +167,7 @@
 
 .work-image {
     width: 100%;
-    max-width: 760px;
+    max-width: 680px;
     aspect-ratio: 4 / 3;
     overflow: hidden;
 }
@@ -182,4 +182,29 @@
 .work-info {
     display: flex;
     flex-direction: column;
+}
+
+.work-number {
+    margin: 0 0 16px;
+    font-size: 14px;
+    color: var(--color-stone);
+}
+
+.work-info h3 {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 56px);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.work-category {
+    margin: 20px 0 0;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: var(--color-green);
+}
+
+.work-year {
+    margin: 8px 0 0;
+    font-size: 14px;
 }
