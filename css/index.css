@@ -1,0 +1,128 @@
+.hero {
+    min-height: calc(100vh - 90px);
+    padding: 40px 48px 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: var(--color-green);
+    filter: blur(160px);
+    opacity: 0.12;
+
+    top: 80px;
+    right: 180px;
+
+    transition: transform 0.15s ease-out;
+    transform: translate(
+        calc(var(--mouse-x, 0) * 20px),
+        calc(var(--mouse-y, 0) * 20px)
+    );
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: var(--color-brown);
+    filter: blur(130px);
+    opacity: 0.12;
+
+    top: 60px;
+    left: 40%;
+
+    transition: transform 0.15s ease-out;
+    transform: translate(
+        calc(var(--mouse-x, 0) * -12px),
+        calc(var(--mouse-y, 0) * -12px)
+    );
+}
+
+.hero-title {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(72px, 12vw, 180px);
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+}
+
+.hero-category {
+    margin-top: 32px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+}
+
+.hero-description {
+    margin-top: 12px;
+    font-size: 16px;
+    color: var(--color-green);
+}
+
+.scroll-guide {
+    position: absolute;
+    right: 48px;
+    bottom: 40px;
+}
+
+.scroll-guide p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.scroll-guide span {
+    margin-top: 4px;
+    font-size: 22px;
+    display: inline-block;
+    animation: scroll-arrow 1.8s ease-in-out infinite;
+}
+
+@keyframes scroll-arrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY();
+    }
+}
+
+.about-preview {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    gap: 64px;
+    padding: 120px 48px;
+}
+
+.about-title {
+    margin: 0;
+    font-size: clamp(48px, 7vw, 96px);
+    font-weight: 500;
+    line-height: 1;
+}
+
+.about-content {
+    padding-top: 24px;
+}
+
+.about-text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.about-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+}
