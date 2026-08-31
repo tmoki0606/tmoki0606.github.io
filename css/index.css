@@ -124,9 +124,10 @@
 
 .about-link {
     align-self: flex-end;
+    width: fit-content;
     margin-top: 32px;
+    margin-right: 60px;
     font-size: 18px;
-    display: inline-block;
     position: relative;
 }
 
