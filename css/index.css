@@ -123,10 +123,7 @@
 }
 
 .about-link {
-    display: inline-flex;
-    align-items: center;
     align-self: flex-end;
-    gap: 12px;
     margin-top: 32px;
     font-size: 18px;
 }
