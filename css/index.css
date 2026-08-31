@@ -111,18 +111,22 @@
 }
 
 .about-content {
+    display: flex;
+    flex-direction: column;
     padding-top: 24px;
 }
 
 .about-text {
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 2;
 }
 
 .about-link {
     display: inline-flex;
     align-items: center;
+    align-self: flex-end;
     gap: 12px;
-    margin-top: 40px;
+    margin-top: 32px;
+    font-size: 18px;
 }
