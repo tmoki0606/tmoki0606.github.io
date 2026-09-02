@@ -1,6 +1,7 @@
 .hero {
     min-height: calc(100vh - 90px);
-    padding: 40px 48px 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
     position: relative;
     overflow: hidden;
 }
@@ -68,7 +69,7 @@
 
 .scroll-guide {
     position: absolute;
-    right: 48px;
+    right: var(--page-padding);
     bottom: 40px;
 }
 
@@ -100,7 +101,8 @@
     display: grid;
     grid-template-columns: 4fr 6fr;
     gap: 64px;
-    padding: 120px 48px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .about-title {
@@ -148,10 +150,11 @@
 }
 
 .selected-works {
-    padding: 120px 48px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.work-title {
+.works-title {
     margin: 0 0 72px;
     font-size: clamp(48px, 7vw, 96px);
     font-weight: 500;
@@ -163,6 +166,9 @@
     grid-template-columns: 6fr 4fr;
     gap: 64px;
     align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
 }
 
