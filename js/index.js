@@ -5,3 +5,22 @@ window.addEventListener("mousemove", function(event) {
     document.documentElement.style.setProperty("--mouse-x", x);
     document.documentElement.style.setProperty("--mouse-y", y);
 });
+
+const recentList = document.querySelector(".recent-list");
+
+recentData.slice(0, 3).forEach(function(recent) {
+    const article = document.createElement("article");
+    article.classList.add("recent-item");
+
+    const time = document.createElement("time");
+    time.setAttribute("datetime", recent.date);
+    time.textContent = recent.date.replaceAll("-", ".");
+
+    const text = document.createElement("p");
+    text.text.textContent = recent.text;
+
+    article.appendChild(time);
+    article.appendChild(text);
+
+    recentList.appendChild(article);
+})
