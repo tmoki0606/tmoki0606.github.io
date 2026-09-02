@@ -163,11 +163,12 @@
     grid-template-columns: 6fr 4fr;
     gap: 64px;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .work-image {
     width: 100%;
-    max-width: 680px;
+    max-width: 620px;
     aspect-ratio: 4 / 3;
     overflow: hidden;
 }
@@ -207,4 +208,21 @@
 .work-year {
     margin: 8px 0 0;
     font-size: 14px;
+}
+
+.work-description {
+    margin: 28px 0 0;
+    max-width: 420px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+.work-item-reverse .work-image {
+    grid-column: 2;
+}
+
+.work-item-reverse .work-info{
+    grid-column: 1;
+    grid-row: 1;
 }
