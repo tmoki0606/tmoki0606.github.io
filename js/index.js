@@ -17,7 +17,7 @@ recentData.slice(0, 3).forEach(function(recent) {
     time.textContent = recent.date.replaceAll("-", ".");
 
     const text = document.createElement("p");
-    text.text.textContent = recent.text;
+    text.textContent = recent.text;
 
     article.appendChild(time);
     article.appendChild(text);
