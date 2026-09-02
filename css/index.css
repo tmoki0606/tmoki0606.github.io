@@ -163,7 +163,7 @@
 
 .work-item {
     display: grid;
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 1fr 1fr;
     gap: 64px;
     align-items: center;
     max-width: 1200px;
@@ -174,7 +174,7 @@
 
 .work-image {
     width: 100%;
-    max-width: 620px;
+    max-width: 530px;
     aspect-ratio: 4 / 3;
     overflow: hidden;
 }
