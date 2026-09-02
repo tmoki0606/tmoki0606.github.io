@@ -96,29 +96,42 @@ a {
     width: 100%;
 }
 
-/* ページの幅により左右の余白調整 
-.page-container{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 24px;
+.site-footer {
+    border-top: 1px solid var(--color-stone);
+    padding-top: 56px;
+    padding-bottom: 32px;
 }
 
- 404ページ 
-.not-found{
-    text-align: center;
-    padding: 120px 0;
+.fotter-main {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: start;
+    gap: 40px;
 }
 
-.not-found h2{
-    font-size: 64px;
-    margin-bottom: 16px;
+.footer-logo a {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
-.back-home{
-    display: inline-block;
-    margin-top: 24px;
-    color: #d80001;
-    text-decoration: none;
-    border-bottom: 1px solid #d80001;
+.footer-nav ul {
+    display: flex;
+    gap: 24px;
 }
-*/
+
+.footer-links {
+    justify-self: end;
+}
+
+.footer-bottom {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-stone);
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--color-green);
+}
