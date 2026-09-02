@@ -232,3 +232,26 @@
     grid-column: 1;
     grid-row: 1;
 }
+.works-link {
+    align-self: flex-end;
+    width: fit-content;
+    margin-top: 32px;
+    font-size: 18px;
+    position: relative;
+}
+
+.works-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+/* When hovering */
+.works-link:hover::after {
+    width: 100%;
+}
