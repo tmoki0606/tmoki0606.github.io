@@ -287,10 +287,10 @@
     font-size: 18px;
 }
 
-.wave-link {
+.wave-link span {
     display: inline-block;
     animation: link-wave 5s ease-in-out infinite;
-    animation-delay: calc(var(--char-index) * 0.20s);
+    animation-delay: calc(var(--char-index) * 0.10s);
 }
 
 @keyframes link-wave {
