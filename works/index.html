@@ -2,46 +2,73 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>制作物</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Works</title>
         <link rel="stylesheet" href="/css/common.css">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="/css/index.css">
         <link rel="icon" type="image/png" href="/favicon.png">
     </head>
-    <body>
-        <script src="/js/common.js"></script>
-        
-        <nav class="site-nav">
-            <ul>
-                <li><a href="/index.html">ホーム</a></li>
-                <li><a href="/about/index.html">自己紹介</a></li>
-                <li><a href="/works/index.html" class="active">制作物</a></li>
-                <li><a href="/other/index.html">その他</a></li>
-            </ul>
-        </nav>
 
-        <div class="page-container">
-            <h2>制作物</h2>
-            <div class="workgrid">    
-                <div class="project1">
-                    <a href="./project_template/" class="work-image project1-image">
-                        <img src="./project_template/image_template.jpg" alt="サムネ">
-                        <p>title</p>
-                    </a>
+    <body>
+        <header class="site-header page-width">
+            <div class="site-logo">
+                <a href="/index.html">ST</a>
+            </div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="/index.html">01 Home</a></li>
+                    <li><a href="/about/index.html" class="active">02 About</a></li>
+                    <li><a href="/works/index.html">03 Works</a></li>
+                    <li><a href="/other/index.html">04 Other</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="about-hero page-width">
+                <p class="about-label">About</p>
+
+                <h1 class="about-hero-title">
+                    Sugita Tomoki
+                </h1>
+
+                <p class="about-hero-text">
+                    情報工学を学びながら、<br>
+                    プログラミング、電子工作、3Dプリントなど、<br>
+                    興味を持ったものを作っています。
+                </p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="page-width">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <a href="/index.html">ST</a>
+                    </div>
+
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about/index.html">About</a></li>
+                            <li><a href="/works/index.html">Works</a></li>
+                            <li><a href="/other/index.html"></a>Other</li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-links">
+                        <a href="https://github.com/tmoki0606">Github</a>
+                    </div>
                 </div>
-                <div class="project2">
-                    <a href="./project_template/" class="work-image project1-image">
-                        <img src="./project_template/image_template.jpg" alt="サムネ">
-                        <p>title</p>
-                    </a>
-                </div>
-                <div class="project3">
-                    <a href="./project_template/" class="work-image project1-image">
-                        <img src="./project_template/image_template.jpg" alt="サムネ">
-                        <p>title</p>
-                    </a>
+
+                <div class="footer-bottom">
+                    <p>@2026 Sugita Tomoki</p>
                 </div>
             </div>
-        </div>
+        </footer>
+
+        <script src="/js/common.js"></script>
+        <script src="/js/recent-data.js"></script>
+        <script src="/js/index.js"></script>
     </body>
 </html>

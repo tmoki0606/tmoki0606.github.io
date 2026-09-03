@@ -1,44 +1,28 @@
-.profile{
-    padding: 32px;
-    border: 1px solid #333333;
-    margin-bottom: 40px;
+.about-hero {
+    min-height: calc(100vh - 90px);
+    padding-top: 80px;
+    padding-bottom: 120px;
 }
 
-.intro-text{
-    margin: 16px 0 32px 0;
-    line-height: 1.8;
+.about-label {
+    margin: 0 0 24px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    color: var(--color-green);
 }
 
-.profile-columns{
-    display: flex;
-    gap: 64px;
-}
-
-.profile-column ul{
-    list-style: none;
+.about-hero-title {
     margin: 0;
-    padding: 0;
-}
-
-.profile-column li{
-    padding: 8px 0;
-    border-bottom: 1px solid #333333;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 32px;
-}
-
-th, td{
-    border: 1px solid #444444;
-    padding: 12px;
-    text-align: left;
-    color: white;
-}
-
-th{
-    background-color: #262626;
+    font-size: clamp(64px, 10vw, 150px);
     font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.about-hero-text {
+    max-width: 650px;
+    margin-top: 64px;
+    margin-left: auto;
+    font-size: 22px;
+    line-height: 2;
 }
