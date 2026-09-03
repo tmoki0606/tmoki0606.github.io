@@ -28,6 +28,8 @@ recentData.slice(0, 3).forEach(function(recent) {
 document.querySelectorAll(".wave-link").forEach(function(link) {
     const text = link.textContent.trim();
 
+    link.textContent = "";
+
     [...text].forEach(function(char, index) {
         const span = document.createElement("span");
 
