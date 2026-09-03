@@ -24,3 +24,16 @@ recentData.slice(0, 3).forEach(function(recent) {
 
     recentList.appendChild(article);
 })
+
+document.querySelectorAll(".wave-link").forEach(function(link) {
+    const text = link.textContent.trim();
+
+    [...text].forEach(function(char, index) {
+        const span = document.createElement("span");
+
+        span.textContent = char === " " ? "\u00A0" : char;
+        span.style.setProperty("--char-index", index);
+
+        link.appendChild(span);
+    })
+})
