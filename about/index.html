@@ -2,80 +2,73 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>自己紹介</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Works</title>
         <link rel="stylesheet" href="/css/common.css">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="/css/index.css">
         <link rel="icon" type="image/png" href="/favicon.png">
     </head>
+
     <body>
-        <script src="/js/common.js"></script>
+        <header class="site-header page-width">
+            <div class="site-logo">
+                <a href="/index.html">ST</a>
+            </div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="/index.html">01 Home</a></li>
+                    <li><a href="/about/index.html" class="active">02 About</a></li>
+                    <li><a href="/works/index.html">03 Works</a></li>
+                    <li><a href="/other/index.html">04 Other</a></li>
+                </ul>
+            </nav>
+        </header>
         
-        <nav class="site-nav">
-            <ul>
-                <li><a href="/index.html">ホーム</a></li>
-                <li><a href="/about/index.html" class="active">自己紹介</a></li>
-                <li><a href="/works/index.html">制作物</a></li>
-                <li><a href="/other/index.html">その他</a></li>
-            </ul>
-        </nav>
+        <main>
+            <section class="about-hero page-width">
+                <p class="about-label">About</p>
 
-        <div class="page-container">
-        <h2>自己紹介</h2>
-        <!--<p>こんにちは<br>
-           京都橘大学所属の杉田知暉です。<br>
-           ここは自己紹介のページですが、間違いないでしょうか。<br><br>
-           大丈夫そうですね。ありがとうございます。
-        </p>-->
-            <div class="profile">
-                <h3>杉田知暉</h3>
+                <h1 class="about-hero-title">
+                    Sugita Tomoki
+                </h1>
 
-                <p class="intro-text">
-                    自己紹介文
+                <p class="about-hero-text">
+                    情報工学を学びながら、<br>
+                    プログラミング、電子工作、3Dプリントなど、<br>
+                    興味を持ったものを作っています。
                 </p>
+            </section>
+        </main>
 
-                <div class="profile-columns">
-                    <div class="profile-column">
-                        <h3>スキル</h3>
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
+        <footer class="site-footer">
+            <div class="page-width">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <a href="/index.html">ST</a>
                     </div>
 
-                    <div class="profile-column">
-                        <h3>趣味</h3>
+                    <nav class="footer-nav">
                         <ul>
-                            <li>モノづくり</li>
-                            <li>guitar</li>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about/index.html">About</a></li>
+                            <li><a href="/works/index.html">Works</a></li>
+                            <li><a href="/other/index.html"></a>Other</li>
                         </ul>
+                    </nav>
+
+                    <div class="footer-links">
+                        <a href="https://github.com/tmoki0606">Github</a>
                     </div>
                 </div>
+
+                <div class="footer-bottom">
+                    <p>@2026 Sugita Tomoki</p>
+                </div>
             </div>
+        </footer>
 
-            <h2>経歴</h2>
-            <table class="history-table">
-                <tr>
-                    <th>M/Y</th>
-                    <th>学歴</th>
-                </tr>
-                <tr>
-                    <td>00/2000</td>
-                    <td>high school graduate</td>
-                </tr>
-            </table>
-
-            <h2>資格</h2>
-            <table class="qualification-table">
-                <tr>
-                    <th>取得日</th>
-                    <th>資格</th>
-                </tr>
-                <tr>
-                    <td>2026/01</td>
-                    <td>基本情報技術者試験 合格</td>
-                </tr>
-            </table>
-        </div>
+        <script src="/js/common.js"></script>
+        <script src="/js/recent-data.js"></script>
+        <script src="/js/index.js"></script>
     </body>
 </html>
